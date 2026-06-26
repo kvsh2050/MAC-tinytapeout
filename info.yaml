@@ -1,4 +1,4 @@
-yaml_version: 1
+yaml_version: 6
 
 project:
   title:        "8-bit Counter Tapeout"
@@ -12,30 +12,27 @@ project:
   clock_hz:     10000000
 
 pinout:
-  ui:
-    - "count_start: load preset value when high, count up when low"
-    - "unused"
-    - "unused"
-    - "unused"
-    - "unused"
-    - "unused"
-    - "unused"
-    - "unused"
-  uo:
-    - "counter bit 0 (LSB)"
-    - "counter bit 1"
-    - "counter bit 2"
-    - "counter bit 3"
-    - "counter bit 4"
-    - "counter bit 5"
-    - "counter bit 6"
-    - "counter bit 7 (MSB)"
-  uio:
-    - "count_in bit 0 (LSB) - preset load value"
-    - "count_in bit 1"
-    - "count_in bit 2"
-    - "count_in bit 3"
-    - "count_in bit 4"
-    - "count_in bit 5"
-    - "count_in bit 6"
-    - "count_in bit 7 (MSB) - preset load value"
+  ui[0]: "count_start: load preset when high, count up when low"
+  ui[1]: "unused"
+  ui[2]: "unused"
+  ui[3]: "unused"
+  ui[4]: "unused"
+  ui[5]: "unused"
+  ui[6]: "unused"
+  ui[7]: "unused"
+  uo[0]: "counter bit 0 (LSB)"
+  uo[1]: "counter bit 1"
+  uo[2]: "counter bit 2"
+  uo[3]: "counter bit 3"
+  uo[4]: "counter bit 4"
+  uo[5]: "counter bit 5"
+  uo[6]: "counter bit 6"
+  uo[7]: "counter bit 7 (MSB)"
+  uio[0]: "count_in bit 0 (LSB) - preset load value"
+  uio[1]: "count_in bit 1"
+  uio[2]: "count_in bit 2"
+  uio[3]: "count_in bit 3"
+  uio[4]: "count_in bit 4"
+  uio[5]: "count_in bit 5"
+  uio[6]: "count_in bit 6"
+  uio[7]: "count_in bit 7 (MSB) - preset load value"
